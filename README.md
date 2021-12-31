@@ -1,2 +1,6 @@
 # Truss-Program
 Designed a MATLAB program that calculates and determines the tension and compression in each member, load/cost ratio, and the maximum weight a truss can hold, given a user's truss in the form of multiple matrices.
+
+The input file consists of 7 matrices. Matrix C defines the truss. The rows are the joints and the columns are the members of the truss. In my input file, you can see that member 1 is connected to joints 1 and 4 and member 2 is connected to joints 1 and 2 and so on and this is due to the placement of the 1's in the matrix. Sx are the external forces in the x direction. Sy are the external forces in the y direction, again with the rows being the joints. Matrix X is the length in the x direction of each joint from the origin, usually the bottom left of the truss. Matrix Y is the distance of each joint from the origin in the y-direction. Matrix L is the weight on the truss and on which joint it is on. The first 5 "joints" in this matrix is the x direction that is why the 32 oz in my input file is on the 7th index meaning the vertical weight is on joint 2. Matrix Ldead is the same structure as L but Ldead contains the weight of the truss itself. These matrices get saved and then loaded from the Output.m file. 
+
+My explanation of the output file is within the comments of the file. 
